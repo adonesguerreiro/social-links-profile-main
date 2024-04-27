@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	bottom: 0;
+	font-family: inherit;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: hsl(0, 0%, 8%);
+}
+
+figure {
+	display: flex;
+	justify-content: center;
+	img {
+		width: 80px;
+		height: 80px;
+		border-radius: 50px;
+	}
+}
+
+.social-card {
+	width: 338px;
+	height: 534px;
+	background-color: hsl(0, 0%, 12%);
+	border-radius: 15px;
+	padding: 25px;
+}
+
+@font-face {
+	font-family: inter-regular;
+	src: url("./assets/fonts/static/Inter-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: inter-variable-font;
+	src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf")
+		format("truetype");
+}
+.name-city-country {
+	display: grid;
+	place-items: center;
+	padding: 29px 40px 29px 40px;
+
+	h1 {
+		font-family: inter-semibold;
+		color: hsl(0, 0%, 100%);
+		padding-bottom: 13px;
+		font-family: inter-regular;
+	}
+
+	p {
+		color: hsl(75, 94%, 57%);
+		font-family: inter-semibold;
+		font-size: 14px;
+	}
+}
+
+@font-face {
+	font-family: inter-regular;
+	src: url("./assets/fonts/static/Inter-Regular.ttf") format("truetype");
+}
+
+.hard-skills {
+	p {
+		color: hsl(0, 0%, 100%);
+		text-align: center;
+		font-family: inter-regular;
+		font-size: 14px;
+		padding-bottom: 25px;
+	}
+}
+
+@font-face {
+	font-family: inter-semibold;
+	src: url("./assets/fonts/static/Inter-SemiBold.ttf") format("truetype");
+}
+
+.social-networks-buttons {
+	display: grid;
+	place-items: center;
+	height: 275px;
+
+	button {
+		width: 270px;
+		height: 40px;
+		background-color: hsl(0, 0%, 20%);
+		border-radius: 10px;
+		color: hsl(0, 0%, 100%);
+		font-family: inter-semibold;
+		border: 0;
+	}
+
+	button:hover {
+		cursor: url("./assets/handcursor.svg"), auto;
+		background-color: hsl(75, 94%, 57%);
+		color: hsl(0, 0%, 8%);
+	}
+}
+
+@media screen and (min-width: 377px) and (max-width: 786px) {
+	.social-card {
+		width: 300px;
+	}
+}
