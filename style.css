@@ -4,21 +4,34 @@
 	font-family: inherit;
 }
 
+@font-face {
+	font-family: inter-regular;
+	src: url("./assets/fonts/static/Inter-Regular.ttf") format("truetype");
+	font-display: swap;
+}
+@font-face {
+	font-family: inter-semibold;
+	src: url("./assets/fonts/static/Inter-SemiBold.ttf") format("truetype");
+	font-display: swap;
+}
+
 main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
 	background-color: hsl(0, 0%, 8%);
+	font-size: 14px;
 }
 
 figure {
 	display: flex;
 	justify-content: center;
+	padding-top: 20px;
 	img {
 		width: 80px;
 		height: 80px;
-		border-radius: 50px;
+		border-radius: 50%;
 	}
 }
 
@@ -27,41 +40,23 @@ figure {
 	height: 534px;
 	background-color: hsl(0, 0%, 12%);
 	border-radius: 15px;
-	padding: 25px;
 }
 
-@font-face {
-	font-family: inter-regular;
-	src: url("./assets/fonts/static/Inter-Regular.ttf") format("truetype");
-}
-
-@font-face {
-	font-family: inter-variable-font;
-	src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf")
-		format("truetype");
-}
 .name-city-country {
 	display: grid;
 	place-items: center;
-	padding: 29px 40px 29px 40px;
+	padding: 20px 40px 20px 40px;
 
 	h1 {
 		font-family: inter-semibold;
 		color: hsl(0, 0%, 100%);
-		padding-bottom: 13px;
-		font-family: inter-regular;
+		padding-bottom: 10px;
 	}
 
 	p {
 		color: hsl(75, 94%, 57%);
 		font-family: inter-semibold;
-		font-size: 14px;
 	}
-}
-
-@font-face {
-	font-family: inter-regular;
-	src: url("./assets/fonts/static/Inter-Regular.ttf") format("truetype");
 }
 
 .hard-skills {
@@ -69,40 +64,35 @@ figure {
 		color: hsl(0, 0%, 100%);
 		text-align: center;
 		font-family: inter-regular;
-		font-size: 14px;
-		padding-bottom: 25px;
+		padding-bottom: 21px;
 	}
-}
-
-@font-face {
-	font-family: inter-semibold;
-	src: url("./assets/fonts/static/Inter-SemiBold.ttf") format("truetype");
 }
 
 .social-networks-buttons {
 	display: grid;
-	place-items: center;
 	height: 275px;
-
-	button {
+	li {
 		width: 270px;
 		height: 40px;
 		background-color: hsl(0, 0%, 20%);
 		border-radius: 10px;
-		color: hsl(0, 0%, 100%);
-		font-family: inter-semibold;
-		border: 0;
+		list-style: none;
 	}
 
-	button:hover {
+	a {
+		display: grid;
+		text-align: center;
+		text-decoration: none;
+		padding: 10px;
+		color: hsl(0, 0%, 100%);
+		font-family: inter-semibold;
+	}
+
+	a:hover {
+		border-radius: 10px;
 		cursor: url("./assets/handcursor.svg"), auto;
 		background-color: hsl(75, 94%, 57%);
 		color: hsl(0, 0%, 8%);
-	}
-}
-
-@media screen and (min-width: 377px) and (max-width: 786px) {
-	.social-card {
-		width: 300px;
+		height: 20px;
 	}
 }
